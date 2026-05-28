@@ -55,4 +55,4 @@ Resources:
 Outputs:
 
   InstanceId:
-    Value: !Ref MyEC2New
+    Value: !Ref MyEC2Instance
