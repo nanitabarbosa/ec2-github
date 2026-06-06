@@ -23,9 +23,9 @@ jobs:
       - name: Delete CloudFormation Stack
         run: |
           aws cloudformation delete-stack \
-            --stack-name ec2-stack-clase
+            --stack-name ec2-stack-GitHub-PR-Hannah
 
       - name: Wait for stack deletion
         run: |
           aws cloudformation wait stack-delete-complete \
-            --stack-name ec2-stack-clase
+            --stack-name ec2-stack-GitHub-PR-Hannah

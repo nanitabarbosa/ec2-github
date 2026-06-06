@@ -14,7 +14,7 @@ Parameters:
 
 Resources:
 
-  ServerSecurityGroupClase:
+  ServerSecurityGroup-PR-Hannah:
     Type: AWS::EC2::SecurityGroup
     Properties:
       GroupDescription: !Ref SecurityGroupDescription
@@ -35,7 +35,7 @@ Resources:
         - Key: Name
           Value: SG-HTTP-Clase-CF
 
-  MyEc2Github:
+  MyEc2GithubPRHannah:
     Type: AWS::EC2::Instance
     Properties:
 
@@ -43,11 +43,11 @@ Resources:
       InstanceType: t3.micro
 
       SecurityGroupIds:
-        - !Ref ServerSecurityGroupClase
+        - !Ref ServerSecurityGroup-PR-Hannah
 
       Tags:
         - Key: Name
-          Value: EC2-Clase-CF
+          Value: EC2-GitHub-PR-Hannah
 
         - Key: Proyecto
           Value: Class-CloudFormation
@@ -68,7 +68,7 @@ Resources:
 Outputs:
 
   InstanceId:
-    Value: !Ref MyEc2Github
+    Value: !Ref MyEc2Github-PR-Hannah
 
   PublicIP:
-    Value: !GetAtt MyEc2Github.PublicIp
+    Value: !GetAtt MyEc2Github-PR-Hannah.PublicIp
