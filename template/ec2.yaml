@@ -13,7 +13,7 @@ Parameters:
     Default: Acceso HTTP al servidor
 
 Resources:
-#prueba
+#pruebaotravez
   ServerSecurityGroupPRHannah:
     Type: AWS::EC2::SecurityGroup
     Properties:
