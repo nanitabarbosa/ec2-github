@@ -13,7 +13,6 @@ Parameters:
     Default: Acceso HTTP al servidor
 
 Resources:
-
   ServerSecurityGroupPRHannah:
     Type: AWS::EC2::SecurityGroup
     Properties:
@@ -47,7 +46,7 @@ Resources:
 
       Tags:
         - Key: Name
-          Value: EC2-GitHub-PR-Hannah
+          Value: EC2-GitHubPRHannah
 
         - Key: Proyecto
           Value: Class-CloudFormation
