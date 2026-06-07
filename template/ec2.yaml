@@ -14,7 +14,7 @@ Parameters:
 
 Resources:
 
-  ServerSecurityGroup-PR-Hannah:
+  ServerSecurityGroupPRHannah:
     Type: AWS::EC2::SecurityGroup
     Properties:
       GroupDescription: !Ref SecurityGroupDescription
@@ -43,7 +43,7 @@ Resources:
       InstanceType: t3.micro
 
       SecurityGroupIds:
-        - !Ref ServerSecurityGroup-PR-Hannah
+        - !Ref ServerSecurityGroupPRHannah
 
       Tags:
         - Key: Name
@@ -68,7 +68,7 @@ Resources:
 Outputs:
 
   InstanceId:
-    Value: !Ref MyEc2Github-PR-Hannah
+    Value: !Ref MyEc2GithubPRHannah
 
   PublicIP:
-    Value: !GetAtt MyEc2Github-PR-Hannah.PublicIp
+    Value: !GetAtt MyEc2GithubPRHannah.PublicIp
